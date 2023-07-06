@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="estilos/style.css">
     <title>Menu Responsivo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site do Palmeiras</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -52,6 +54,14 @@
                 menu.style.display= 'none'
             }
 
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
         }
     </script>
 </body>

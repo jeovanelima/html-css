@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu Site do Palmeiras</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Uniforme</a></li>
+                <li><a href="#">Títulos</a></li>
+                <li><a href="#">Elenco</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Quando Surgiu?</h2>
+            <p>O Palmeiras surgiu no dia 26 de agosto de 1914. Fundado por imigrantes italianos, seu primeiro nome foi Società Sportiva Palestra Italia. Em 1942, quando estava estabelecida como uma força do futebol paulista, a equipe foi obrigada a trocar de nome, passando a se chamar Sociedade Esportiva Palmeiras em decorrência da Segunda Guerra Mundial. O Palmeiras foi campeão paulista logo em sua primeira partida com o novo nome. Foram, ao todo, 22 títulos estaduais. Um dos times mais famosos da história do clube alviverde foi o chamado de "Academia de Futebol", das décadas de 1960 e 70, liderado por Ademir da Guia - um dos poucos elencos que faziam frente ao Santos de Pelé.</p>
+
+            <h2>Estádio</h2>
+            <p>O Palestra Itália é um estádio paulistano, do bairro Água Branca, que pertence ao Palmeiras. Inaugurado em 3 de maio de 1902, era alugado a diversos clubes. Em 1920, o local foi comprado pelo Palmeiras - então Palestra. Desde então, a equipe fez várias reformas no estádio. No momento, o local está fechado, sofrendo obras para virar uma arena. O maior público do Palestra Itália foi em 18 de agosto de 1976, na vitória por 1 a 0 do Palmeiras diante do XV de Piracicaba: 40.283 presentes. Um dos principais títulos da história do Palmeiras, a Copa Libertadores da América de 1999, foi conquistado no local.</p>
+            
+            <h2>Ídolos</h2>
+            <ul>
+                <li>Ademir da Guia</li>
+                <li>César Sampaio</li>
+                <li>Djalma Santos</li>
+                <li>Dudu</li>
+                <li>Evair</li>
+                <li>Heitor</li>
+                <li>Luís Pereira</li>
+                <li>Rivaldo</li>
+                <li>Waldemar Fíume</li>
+            </ul>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'none'){
+                menu.style.display= 'block'
+            }else if(menu.style.display= 'block'){
+                menu.style.display= 'none'
+            }
+
+        }
+    </script>
+</body>
+</html>

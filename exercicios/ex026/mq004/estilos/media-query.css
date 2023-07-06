@@ -1,7 +1,120 @@
 @charset "UTF-8";
 
-/*todas as demias medias*/
+/*todas as demais medias*/
 
-@media print {
+/*typical device Breakpoints
+-------------------------------
+    <GUANABARA>
+    Pequenas Telas: ate 600px
+    celular: 600px ate 768px
+    tablet: 769px ate 992px
+    desktop: 992px ate 1200px
+    Grandes Telas: acima de 1200px
+
+
+
+    <ATUAL>
+    Dispositivos pequenos, como telefones grandes (640px e superiores) ( min - width : 40em )
+   
+
+    Dispositivos médios, como tablets (768px e superiores)( min - width: 48em )
+   
+
+    Dispositivos grandes, como laptops (1024px e superior)( min - width : 64em )
+   
+
+    Dispositivos maiores, como desktops (1280px e superior)( largura mínima : 80em )
+   
+*/
+
+@media print { /*impressão*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*desnecessario*/
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Essa ipressão foi feita atraves do site teste do jeovane ';
+        text-decoration: overline;
+        text-align: center;
+    }
+
+    img#tel{display: none;}
+
+    #tablet{display: none;}
+
+    #print{display: block;}
+
+    #pc{display: none;}
+
+    #tv{display: none;}
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) { /*tablet*/
     
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+img#tel{display: none;}
+
+#tablet{display: block;}
+
+#print{display: none;}
+
+#pc{display: none;}
+
+#tv{display: none;}
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1200px){ /*dektop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#tel{display: none;}
+
+    #tablet{display: none;}
+
+    #print{display: none;}
+
+    #pc{display: block;}
+
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){ /*telas grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    img#tel{display: none;}
+
+    #tablet{display: none;}
+
+    #print{display: none;}
+
+    #pc{display: none;}
+
+    #tv{display: block;}
 }
